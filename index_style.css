@@ -43,7 +43,6 @@ body{
   left: 450px;
   position: absolute;
   border-radius: 50px;
-  color: white;
   opacity: 84%;
 }
 
@@ -76,7 +75,7 @@ body{
 }
 
 .registration:hover{
-  background-color: green;
+  background-color: #4AF000;
 }
 
 
