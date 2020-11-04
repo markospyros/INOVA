@@ -1,0 +1,96 @@
+body{
+  font-family: Georgia;
+  margin: 0;
+}
+
+.topnav{
+  background-color: #707070;
+  overflow: hidden;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#inova_logo{
+  float: left;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+}
+
+.topnav a{
+  text-align: center;
+  padding: 40px 50px;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  float: right;
+}
+
+.topnav a:hover{
+  background-color: #969696;
+}
+
+#bilde4{
+  padding-top: 50px;
+  height: 700px;
+  object-fit: cover;
+  z-index: 2;
+}
+
+.text1{
+  top: 350px;
+  left: 450px;
+  position: absolute;
+  border-radius: 50px;
+  opacity: 84%;
+}
+
+#more{
+  color: #4AF000;
+}
+
+.text1 div{
+  float: left;
+  padding: 10px;
+  font-size: 50px;
+}
+
+.registration{
+  border: 1px solid gray;
+  border-radius: 50px;
+  padding-left: 23px;
+  padding-right: 23px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 1020px;
+  background-color: gray;
+  font-size: 40px;
+  top: 700px;
+  left: 175px;
+  position: absolute;
+  color: white;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  opacity: 80%;
+}
+
+.registration:hover{
+  background-color: #4AF000;
+}
+
+
+
+@media only screen and (max-height:746px){
+
+  .registration{
+    top: 650px;
+    left: 175px;
+    position: absolute;
+  }
+
+  #bilde1{
+    height: 630px;
+    object-fit: cover;
+  }
+
+
+}
