@@ -79,14 +79,6 @@ body{
 }
 
 
-@keyframes floating {
-  0% {top: 700px;}
-  50% {top: 750px;}
-  100% {top: 700px;}
-
-}
-
-
 
 @media only screen and (max-height:746px){
 
