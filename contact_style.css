@@ -1,12 +1,14 @@
 body{
   font-family: Georgia;
   margin: 0;
+  background-color:#F5F5F5;
 }
 
 .topnav{
   background-color: #707070;
   overflow: hidden;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+
 }
 
 #inova_logo{
@@ -29,78 +31,46 @@ body{
 .topnav a:hover{
   background-color: #969696;
 }
-
-#bilde3{
-  z-index: -1;
-  top: 101px;
-  position: absolute;
+.columns {
+  display: flex;
 }
-
-.container{
-  max-width: 800px;
-  height: 650px;
-  background: #fff;
-  margin: 39px auto;
-  box-shadow: 0 0 30px rgba(71,99,84, 0.6);
-  box-sizing: border-box;
-  padding: 40px;
-  opacity: 86%;
+.column1 {
+  flex: 47%;
+  padding-left: 70px;
+  padding-top: 80px;
+  height: 100px; 
+}
+.column2 {
+  flex: 53%;
+  padding: 80px;
+  height: 500px; 
+}
+.column3 {
+  flex: 33%;
+  padding-left: 50px;
+}
+.column4 {
+  flex: 33%;
+}
+.column5{
+  flex: 33%;
 }
 
 #headline{
-  text-align: center;
-  letter-spacing: 1px;
-  font-size: 45px;
-  margin-bottom: 20px;
-  color: #486255;
+    letter-spacing: 2px;
+    text-align: center;
 }
-
-.input,
-.message .area{
-  width: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-  margin-bottom: 25px;
-  border: 2px solid #e9eaea;
-  font-size: 14px;
-  border-radius: 5px;
-  outline: none;
-  transform: all 0.5s ease;
+p{
+    font-size: 20px;
+    text-align: center;
 }
-
-.login .input{
-  width: 48%;
-  float: left;
-  margin-right: 4%;
-}
-
-.login .input:last-child{
-  margin-right: 0;
-}
-
-.message .area{
-  height: 200px;
-}
-
 .button{
-  width: 250px;
-  background: #486255;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  border-radius: 5px;
-  margin: 0 auto;
-  color: #fff;
-  text-transform: uppercase;
-  cursor: pointer;
-  opacity: 100%;
+    border-radius: 50%;
 }
-
-.input:focus,
-.message .area:focus{
-  border: 2px solid #486255;
-}
-
-::-webkit-input-placeholder{
-  font-family: 'roboto';
+#footer{
+    background-color: #707070;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
 }
