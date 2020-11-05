@@ -116,11 +116,6 @@ body{
     padding-left: 122px;
   }
 
-  #bilde1{
-
-    width: 325px;
-    height: 570px;
-  }
 
   #footer{
       background-color: #707070;
@@ -171,12 +166,6 @@ body{
   #inova_logo{
     width: 70px;
     padding-left: 150px;
-  }
-
-  #bilde1{
-
-    width: 375px;
-    height: 570px;
   }
 
   #footer{
@@ -230,12 +219,6 @@ body{
     padding-left: 175px;
   }
 
-  #bilde1{
-
-    width: 425px;
-    height: 570px;
-  }
-
   #footer{
     background-color: #707070;
     padding: 14.5px;
@@ -287,12 +270,6 @@ body{
     padding-left: 345px;
   }
 
-  #bilde1{
-
-    width: 768px;
-    height: 588px;
-  }
-
   #footer{
     background-color: #707070;
     padding: 14.5px;
@@ -335,3 +312,88 @@ body{
 
 /*Laptop 1024px*/
 @media only screen and (min-width: 1024px){
+
+  .topnav a{
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    float: right;
+    padding-right: 10px;
+  }
+
+  #bilde1{
+
+    width: 1024px;
+    height: 588px;
+  }
+
+  #footer{
+    background-color: #707070;
+    padding: 14.5px;
+    padding-left: 3px;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    width: 1024px;
+  }
+
+  .registration{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 700px;
+    font-size: 25px;
+    left: 170px;
+    top: 600px;
+  }
+
+  .text1{
+    top: 320px;
+    left: 270px;
+    position: absolute;
+    opacity: 84%;
+  }
+
+  .text1 div{
+    float: left;
+    padding: 10px;
+    font-size: 50px;
+  }
+
+}
+
+/*Laptop 1440px*/
+@media only screen and (max-width: 1440px){
+
+
+  #footer{
+    background-color: #707070;
+    padding: 14.5px;
+    padding-left: 3px;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    width: 1440px;
+  }
+
+  .registration{
+    left: 350px;
+    top: 600px;
+  }
+
+  .text1{
+    top: 320px;
+    left: 380px;
+    position: absolute;
+    opacity: 84%;
+  }
+
+  .text1 div{
+    float: left;
+    padding: 10px;
+    font-size: 70px;
+  }
+
+}
