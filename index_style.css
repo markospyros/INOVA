@@ -34,8 +34,7 @@ body{
   filter: blur(6px);
   padding-top: 10px;
   height: 700px;
-  object-fit: cover;
-  z-index: 2;
+
 }
 
 .text1{
@@ -85,16 +84,45 @@ body{
     font-size: 16px;
 }
 
-@media only screen and (max-height:722px){
+@media only screen and (max-width:320px){
+  .topnav a{
+    display: none;
+  }
 
-  .registration{
-    top: 550px;
-    left: 175px;
-    position: absolute;
+  #inova_logo{
+    width: 70px;
+    padding-left: 122px;
   }
 
   #bilde1{
-    height: 630px;
-    object-fit: cover;
+
+    width: 325px;
+    height: 570px;
   }
+
+  #footer{
+      background-color: #707070;
+      padding: 15px;
+      text-align: center;
+      color: white;
+      font-size: 10px;
+  }
+
+  .registration{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 255px;
+    font-size: 15px;
+    left: 20px;
+    top: 550px;
+  }
+
+  .text1{
+    top: 350px;
+    left: 20px;
+
+  }
+
 }
