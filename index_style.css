@@ -82,11 +82,10 @@ body{
 }
 
 
-
-@media only screen and (max-height:746px){
+@media only screen and (max-height:722px){
 
   .registration{
-    top: 650px;
+    top: 550px;
     left: 175px;
     position: absolute;
   }
