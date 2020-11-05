@@ -5,6 +5,7 @@
 body{
   font-family: Georgia;
   margin: 0;
+  background-color: rgb(10, 25, 45);
 }
 
 .topnav{
@@ -34,21 +35,26 @@ body{
   background-color: #969696;
 }
 
-/*#bilde4{
-  padding-top: 50px;
-  height: 700px;
-  object-fit: cover;
-  z-index: 2;
-}*/
+.text_title{
+  text-align: center;
+  font-size: 50px;
+  color: white;
+}
 
-.column {
+.text {
   float: left;
   width: 50%;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  height: 300px;
 }
 
-/* Clear floats after the columns */
+.program {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px;
+}
+
 .row:after {
   content: "";
   display: table;
@@ -56,19 +62,16 @@ body{
   background-color:#bbb;
 }
 
+#schedule td, #schedule th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  width: 500px;
+}
 
-@media only screen and (max-height:746px){
-
-  .registration{
-    top: 650px;
-    left: 175px;
-    position: absolute;
-  }
-
-  #bilde1{
-    height: 630px;
-    object-fit: cover;
-  }
-
-
+#schedule th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: black;
+  color: white;
 }
