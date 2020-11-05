@@ -5,7 +5,7 @@
 body{
   font-family: Georgia;
   margin: 0;
-  background-color: rgb(10, 25, 45);
+  background-color: #e8e8e8;
 }
 
 .topnav{
@@ -38,7 +38,6 @@ body{
 .text_title{
   text-align: center;
   font-size: 50px;
-  color: white;
 }
 
 .text {
@@ -46,7 +45,9 @@ body{
   width: 50%;
   padding: 10px;
   height: 300px;
+  background-color: #F5F5F5;
 }
+
 
 .program {
   float: left;
@@ -55,23 +56,29 @@ body{
   height: 300px;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.nextTo:after {
   background-color:#bbb;
+  content: "";
+  clear: both;
+  display: table;
 }
 
 #schedule td, #schedule th {
-  border: 1px solid #ddd;
-  padding: 8px;
   width: 500px;
+  border: 1px solid #ddd;
+  width: 500px;
+  padding: 8px;
+  background-color: #F5F5F5;
+  color: black;
 }
 
 #schedule th {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  color: white;
   text-align: left;
+  padding-bottom: 12px;
+  padding-top: 12px;
   background-color: black;
+  text-align: left;
+  background-color: green;
   color: white;
 }
