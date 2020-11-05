@@ -15,6 +15,7 @@ body{
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 10px;
+  float: left;
 }
 
 .topnav a{
@@ -30,10 +31,27 @@ body{
   background-color: #969696;
 }
 
+.menu{
+  top: 10px;
+  left: 13px;
+  position: absolute;
+  display: none;
+}
+
+.menu div{
+  border: 1px solid white;
+  width: 30px;
+  padding: 1px;
+  margin: 5px;
+  border-radius: 50px;
+  background-color: white;
+}
+
 #bilde1{
   filter: blur(6px);
   padding-top: 10px;
   height: 700px;
+  float: left;
 
 }
 
@@ -42,6 +60,7 @@ body{
   left: 450px;
   position: absolute;
   opacity: 84%;
+  float: left;
 }
 
 #more{
@@ -71,6 +90,7 @@ body{
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
   opacity: 80%;
   text-align: center;
+  float: left;
 }
 
 .registration:hover{
@@ -82,9 +102,11 @@ body{
     text-align: center;
     color: white;
     font-size: 16px;
+    float: left;
 }
 
-@media only screen and (max-width:320px){
+/*Mobile S*/
+@media only screen and (width:320px){
   .topnav a{
     display: none;
   }
@@ -102,10 +124,12 @@ body{
 
   #footer{
       background-color: #707070;
-      padding: 15px;
+      padding: 30px;
+      padding-left: 3px;
       text-align: center;
       color: white;
       font-size: 10px;
+      width: 320px;
   }
 
   .registration{
@@ -115,14 +139,199 @@ body{
     padding-top: 5px;
     width: 255px;
     font-size: 15px;
-    left: 20px;
+    left: 23px;
     top: 550px;
   }
 
   .text1{
-    top: 350px;
-    left: 20px;
+    top: 320px;
+    left: 30px;
+    position: absolute;
+    opacity: 84%;
+  }
 
+  .text1 div{
+    float: left;
+    padding: 2px;
+    font-size: 30px;
+  }
+
+  .menu{
+    display: block;
   }
 
 }
+
+/*Mobile M*/
+@media only screen and (width:375px){
+  .topnav a{
+    display: none;
+  }
+
+  #inova_logo{
+    width: 70px;
+    padding-left: 150px;
+  }
+
+  #bilde1{
+
+    width: 375px;
+    height: 570px;
+  }
+
+  #footer{
+      background-color: #707070;
+      padding: 14.5px;
+      padding-left: 3px;
+      text-align: center;
+      color: white;
+      font-size: 10px;
+      width: 370px;
+  }
+
+  .registration{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 265px;
+    font-size: 15px;
+    left: 45px;
+    top: 550px;
+  }
+
+  .text1{
+    top: 320px;
+    left: 50px;
+    position: absolute;
+    opacity: 84%;
+  }
+
+  .text1 div{
+    float: left;
+    padding: 2px;
+    font-size: 30px;
+  }
+
+  .menu{
+    display: block;
+  }
+
+}
+
+/*Mobile L*/
+@media only screen and (width:425px){
+  .topnav a{
+    display: none;
+  }
+
+  #inova_logo{
+    width: 70px;
+    padding-left: 175px;
+  }
+
+  #bilde1{
+
+    width: 425px;
+    height: 570px;
+  }
+
+  #footer{
+    background-color: #707070;
+    padding: 14.5px;
+    padding-left: 3px;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    width: 406px;
+  }
+
+  .registration{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 265px;
+    font-size: 15px;
+    left: 70px;
+    top: 550px;
+  }
+
+  .text1{
+    top: 320px;
+    left: 70px;
+    position: absolute;
+    opacity: 84%;
+  }
+
+  .text1 div{
+    float: left;
+    padding: 2px;
+    font-size: 30px;
+  }
+
+  .menu{
+    display: block;
+  }
+
+}
+
+/*Tablet 768px*/
+@media only screen and (width:768px){
+  .topnav a{
+    display: none;
+  }
+
+  #inova_logo{
+    width: 70px;
+    padding-left: 345px;
+  }
+
+  #bilde1{
+
+    width: 768px;
+    height: 588px;
+  }
+
+  #footer{
+    background-color: #707070;
+    padding: 14.5px;
+    padding-left: 3px;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    width: 768px;
+  }
+
+  .registration{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 400px;
+    font-size: 15px;
+    left: 170px;
+    top: 550px;
+  }
+
+  .text1{
+    top: 320px;
+    left: 130px;
+    position: absolute;
+    opacity: 84%;
+  }
+
+  .text1 div{
+    float: left;
+    padding: 10px;
+    font-size: 50px;
+  }
+
+  .menu{
+    display: block;
+  }
+
+}
+
+/*Laptop 1024px*/
+@media only screen and (min-width: 1024px){
