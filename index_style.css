@@ -16,7 +16,6 @@ body{
 }
 
 #inova_logo{
-  float: left;
   padding-top: 10px;
   padding-left: 15px;
   padding-right: 15px;
@@ -62,7 +61,12 @@ body{
   grid-area: main;
 }
 
+.columns{
+  display: flex;
+}
+
 .text1{
+  flex:50%;
   margin: auto;
   text-align: center;
   opacity: 84%;
@@ -222,8 +226,4 @@ body{
     width: 100px;
     padding-left: 120px;
   }
-}
-
-@media only screen and (min-width: 1024px){
-
 }
