@@ -81,10 +81,9 @@ body{
 #headline{
     text-align: center;
 }
+
 h1{
-    position: relative;
-    left: 700px;
-    top: 600px;
+
 }
 .column2{
     flex: 25%:
@@ -98,6 +97,7 @@ h1{
 .staff{
     border-radius: 50%;
     width: 200px;
+    flex: 50%;
 }
 .columns {
   display: flex;
@@ -143,6 +143,7 @@ h1{
     position: relative;
     left: 110px;
 }
+
 #footer{
     background-color: #707070;
     padding: 15px;
