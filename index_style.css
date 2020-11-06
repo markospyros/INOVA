@@ -40,6 +40,7 @@ body{
 .menu{
   top: 10px;
   left: 13px;
+  margin-top: 5px;
   position: absolute;
   display: none;
 }
@@ -62,6 +63,7 @@ body{
 }
 
 .text1{
+  margin: auto;
   text-align: center;
   opacity: 84%;
   grid-area: main;
@@ -110,4 +112,118 @@ body{
     float: left;
     overflow: hidden;
     grid-area: footer;
+}
+
+@media only screen and (max-width: 905px){
+  .topnav a{
+    display: none;
+  }
+
+  .menu{
+    display: block;
+  }
+
+  #inova_logo{
+    width: 100px;
+    padding-left: 350px;
+  }
+}
+
+
+@media only screen and (max-width: 776px){
+  .topnav a{
+    display: none;
+  }
+
+  .menu{
+    display: block;
+  }
+
+  #inova_logo{
+    width: 100px;
+    padding-left: 320px;
+  }
+}
+
+/*Tablet*/
+@media only screen and (max-width: 768px){
+  .topnav a{
+    display: none;
+  }
+
+  .menu{
+    display: block;
+  }
+
+  #inova_logo{
+    width: 100px;
+    padding-left: 330px;
+  }
+}
+
+@media only screen and (max-width: 730px){
+  .topnav a{
+    display: none;
+  }
+
+  .menu{
+    display: block;
+  }
+
+  #inova_logo{
+    width: 100px;
+    padding-left: 215px;
+  }
+}
+
+/*Mobil L*/
+@media only screen and (max-width: 425px){
+  .topnav a{
+    display: none;
+  }
+
+  .menu{
+    display: block;
+  }
+
+  #inova_logo{
+    width: 100px;
+    padding-left: 170px;
+  }
+}
+
+/*Mobile M*/
+@media only screen and (max-width: 375px){
+  .topnav a{
+    display: none;
+  }
+
+  .menu{
+    display: block;
+  }
+
+  #inova_logo{
+    width: 100px;
+    padding-left: 150px;
+  }
+}
+
+/*Mobile S*/
+@media only screen and (max-width: 320px){
+  .topnav a{
+    display: none;
+  }
+
+  .menu{
+    display: block;
+  }
+
+  #inova_logo{
+    width: 100px;
+    padding-left: 120px;
+  }
+}
+
+@media only screen and (min-width: 1024px){
+
 }
