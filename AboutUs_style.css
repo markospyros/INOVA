@@ -33,35 +33,12 @@ body{
   background-color: #969696;
 }
 
-.menu{
-  top: 10px;
-  left: 13px;
-  margin-top: 5px;
-  position: absolute;
-  display: none;
-}
-
-.menu div{
-  border: 1px solid white;
-  width: 30px;
-  padding: 1px;
-  margin: 5px;
-  border-radius: 50px;
-  background-color: white;
-}
-
-
 #introduction{
   color: black;
   opacity: 84%;
-  float: left;
-  width: 50%;
-  padding: 10px;
-
-}
-
-#row{
-  display: flex;
+  top: 80px;
+  left: 50px;
+  position: absolute;
 }
 
 #text_intro_title{
@@ -72,32 +49,20 @@ body{
   font-size: 27px;
 }
 #bilde2{
-  margin: auto;
-  float: right;
-  width: 45%;
-  padding: 10px;
-  padding-top: 80px;
+    float: right;
+    width: 50%
 }
 #headline{
     text-align: center;
 }
-
 h1{
-
-}
-.column2{
-    flex: 25%:
-}
-.column3{
-    flex: 25%:
-}
-.column4{
-    flex: 25%:
+    position: relative;
+    left: 680px;
+    top: 600px;
 }
 .staff{
     border-radius: 50%;
     width: 200px;
-    flex: 50%;
 }
 .columns {
   display: flex;
@@ -106,52 +71,57 @@ h1{
 .column1 {
   flex: 20%;
   padding-left: 120px;
-  height: 200px;
+  height: 200px; 
 }
 .column2 {
   flex: 20%;
   padding: 10px;
-  height: 200px;
+  height: 200px; 
 }
 .column3 {
   flex: 20%;
   padding: 10px;
-  height: 200px;
+  height: 200px; 
 }
 .column4 {
   flex: 20%;
   padding: 10px;
-  height: 195px;
+  height: 195px; 
 }
 .info1{
-    flex:25%;
+    flex:20%;
+    text-align: center;
     position: relative;
-    left: 210px;
+    left: 30px;
 }
 .info2{
-    flex:25%;
+    flex:20%;
+    text-align: center;
     position: relative;
-    left: 160px;
+    right: 2px;
 }
 .info3{
-    flex:25;
+    flex:20%;
+    text-align: center;
+    padding: 5px;
     position: relative;
-    left: 120px;
+    right: 28px;
 }
 .info4{
-    flex:25;
+    flex:20%;
+    text-align: center;
     position: relative;
-    left: 110px;
+    right: 55px;
 }
-
 #footer{
     background-color: #707070;
     padding: 15px;
     text-align: center;
     color: white;
     font-size: 16px;
+    overflow: hidden;
+    grid-area: footer;
 }
-
 @media only screen and (max-width: 905px){
   .topnav a{
     display: none;
