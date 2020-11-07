@@ -73,4 +73,6 @@ p{
     text-align: center;
     color: white;
     font-size: 16px;
+    overflow: hidden;
+    grid-area: footer;
 }
