@@ -54,7 +54,8 @@ body{
 }
 
 #x-button{
-  padding-right: 20px;
+  left: 10px;
+  position: absolute;
   font-family: "Arial";
   color: white;
 }
@@ -75,6 +76,7 @@ ul{
   background-color: #008000;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
   display: none;
+  position: fixed;
 }
 
 #menu_nav li{
@@ -136,14 +138,13 @@ p{
 }
 
 #footer{
+    position: relative;
     background-color: #707070;
-    padding: 15px;
+    padding: 10px;
     text-align: center;
     color: white;
     font-size: 16px;
-    position:absolute;
-    bottom:0;
-    width:100%;
+    margin-top: 100px;
 }
 
 @media only screen and (max-width: 905px){
@@ -170,6 +171,10 @@ p{
 
   .social_media div{
     margin-left: 100px;
+  }
+
+  .menu_nav{
+    display: none;
   }
 
 
@@ -290,6 +295,20 @@ p{
   }
 }
 
+@media only screen and (max-width: 500px){
+
+
+  .social_media{
+    margin-left: 60px;
+  }
+
+  .social_media div{
+    margin-right: 5px;
+    margin-left: auto;
+
+  }
+}
+
 /*Mobil L*/
 @media only screen and (max-width: 425px){
   .topnav a{
@@ -303,6 +322,22 @@ p{
   #inova_logo{
     width: 100px;
     padding-left: 170px;
+  }
+
+  .social_media{
+    margin-left: 10px;
+  }
+
+  .social_media div{
+    margin-right: 5px;
+    margin-left: auto;
+
+}
+
+  .columns{
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 
@@ -319,6 +354,21 @@ p{
   #inova_logo{
     width: 100px;
     padding-left: 150px;
+  }
+
+  .social_media{
+    margin-left: -10px;
+  }
+
+  .social_media div{
+    margin-right: 5px;
+    margin-left: auto;
+  }
+
+  .columns{
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 
@@ -342,4 +392,21 @@ p{
     margin-right: auto;
   }
 
-}
+
+    .social_media{
+      margin-left: -40px;
+    }
+
+    .social_media div{
+      margin-right: 5px;
+      margin-left: auto;
+
+  }
+
+  .columns{
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  }
