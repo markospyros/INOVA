@@ -247,6 +247,11 @@ li a{
     width: 100px;
     padding-left: 170px;
   }
+
+  .text_title{
+    margin-left: 0px;
+    font-size: 57px;
+  }
 }
 
 /*Mobile M*/
@@ -264,10 +269,6 @@ li a{
     padding-left: 150px;
   }
 
-  .text_title{
-    margin-left: 0px;
-    font-size: 57px;
-  }
 }
 
 /*Mobile S*/
