@@ -163,6 +163,8 @@ li a{
     width:100%;
 }
 
+/*For the screen measurements I used google chrome measurement development tool*/
+
 @media only screen and (max-width: 1220px){
   .registration{
     left: 280px;
@@ -307,5 +309,11 @@ li a{
 
   .registration{
     left: 50px;
+  }
+}
+
+@media only screen and (max-height: 600px)  {
+  #menu_nav{
+    position: absolute;
   }
 }
