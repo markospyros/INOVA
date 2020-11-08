@@ -49,7 +49,7 @@ body{
 }
 
 .text_title{
-  padding-left: 50px;
+  margin-left: 50px;
   font-size: 57px;
 }
 
@@ -58,10 +58,11 @@ body{
 }
 
 .text {
-  flex: 40%;
-  padding-left: 50px;
+  margin-left: 50px;
   height: 300px;
   font-size: 27px;
+  float: left;
+  width: 100%;
 }
 
 
@@ -70,6 +71,7 @@ body{
   padding: 10px;
   height: 300px;
   padding-top: 28px;
+  float: right;
 }
 
 #schedule td, #schedule th {
@@ -94,15 +96,20 @@ body{
   background-color: green;
   color: white;
 }
-#footer{
+
+/*#footer{
     background-color: #707070;
     padding: 15px;
     text-align: center;
     color: white;
     font-size: 16px;
-    position: relative;
-    top: 100px;
-}
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    margin-top: auto;
+}*/
 
 @media only screen and (max-width: 905px){
   .topnav a{
@@ -117,6 +124,7 @@ body{
     width: 100px;
     padding-left: 350px;
   }
+
 }
 
 
@@ -166,6 +174,24 @@ body{
   }
 }
 
+@media only screen and (max-width: 618px){
+  .row {
+    display: inline-block;
+
+  }
+
+  .text{
+    margin-left: 5px;
+  }
+
+  .program {
+    margin-left: -50px;
+    height: 300px;
+    margin-top: 250px;
+  }
+
+}
+
 /*Mobil L*/
 @media only screen and (max-width: 425px){
   .topnav a{
@@ -212,4 +238,19 @@ body{
     width: 100px;
     padding-left: 120px;
   }
+
+  .text{
+    font-size: 18px;
+    width: 75%;
+    margin-left: 18px;
+    margin-right: 20px;
+  }
+
+  .text_title{
+    font-size: 40px;
+    width: 20%;
+    margin-left: 20px;
+  }
+
+
 }
