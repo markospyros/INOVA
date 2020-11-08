@@ -58,7 +58,8 @@ body{
 }
 
 #x-button{
-  padding-left: 20px;
+  left: 10px;
+  position: absolute;
   font-family: "Arial";
   color: white;
 }
@@ -79,6 +80,7 @@ ul{
   background-color: #008000;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
   display: none;
+  position: fixed;
 }
 
 #menu_nav li{
@@ -136,7 +138,7 @@ li a{
   background-color: gray;
   font-size: 40px;
   top: 600px;
-  left: 435px;
+  left: 30%;
   position: absolute;
   color: white;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
@@ -150,14 +152,27 @@ li a{
   background-color: #4AF000;
 }
 #footer{
+    position: fixed;
+    bottom: 0;
     background-color: #707070;
     padding: 15px;
     text-align: center;
     color: white;
     font-size: 16px;
-    position:absolute;
     bottom:0;
     width:100%;
+}
+
+@media only screen and (max-width: 1220px){
+  .registration{
+    left: 280px;
+  }
+}
+
+@media only screen and (max-width: 954px){
+  .registration{
+    left: 120px;
+  }
 }
 
 @media only screen and (max-width: 905px){
@@ -177,6 +192,10 @@ li a{
   .menu_nav{
     display: none;
   }
+
+  .registration{
+    left: 60px;
+  }
 }
 
 
@@ -192,6 +211,9 @@ li a{
   #inova_logo{
     width: 100px;
     padding-left: 320px;
+  }
+  .registration{
+    left: 15px;
   }
 }
 
@@ -240,6 +262,12 @@ li a{
     width: 100px;
     padding-left: 170px;
   }
+  .registration{
+    width: 50%;
+    font-size: 15px;
+    left: 80px;
+    position: absolute;
+  }
 }
 
 /*Mobile M*/
@@ -256,6 +284,10 @@ li a{
     width: 100px;
     padding-left: 150px;
   }
+
+  .registration{
+    left: 70px;
+  }
 }
 
 /*Mobile S*/
@@ -271,5 +303,9 @@ li a{
   #inova_logo{
     width: 100px;
     padding-left: 120px;
+  }
+
+  .registration{
+    left: 50px;
   }
 }
