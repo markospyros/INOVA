@@ -31,19 +31,79 @@ body{
 .topnav a:hover{
   background-color: #969696;
 }
+
+.menu{
+  top: 10px;
+  left: 13px;
+  margin-top: 5px;
+  position: absolute;
+  display: none;
+}
+
+.menu div{
+  border: 1px solid white;
+  width: 30px;
+  padding: 1px;
+  margin: 5px;
+  border-radius: 50px;
+  background-color: white;
+}
+
+.menu:hover{
+  background-color: #969696;
+}
+
+#x-button{
+  padding-right: 20px;
+  font-family: "Arial";
+  color: white;
+}
+
+
+ul{
+  list-style-type: none;
+  height: 100%;
+}
+
+#menu_nav{
+  top: 0px;
+  position: absolute;
+  z-index: 2;
+  border: 1px solid #008000	;
+  height: 780px;
+  font-size: 25px;
+  background-color: #008000;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+#menu_nav li{
+  text-align: center;
+  padding: 50px;
+}
+
+li a{
+  text-decoration: none;
+  color: white;
+}
+
+#menu_nav li:hover{
+  background-color: #006400;
+}
+
 .columns {
   display: flex;
 }
 .column1 {
   flex: 47%;
-  padding-left: 70px;
-  padding-top: 80px;
-  height: 100px; 
+  margin-left: 70px;
+  margin-top: 80px;
+  height: 100px;
 }
 .column2 {
   flex: 53%;
   padding: 80px;
-  height: 500px; 
+  height: 500px;
 }
 .column3 {
   flex: 33%;
@@ -54,6 +114,13 @@ body{
 }
 .column5{
   flex: 33%;
+}
+.social_media{
+  display: flex;
+}
+
+.social_media div{
+  margin: 10px;
 }
 
 #headline{
@@ -67,12 +134,212 @@ p{
 .button{
     border-radius: 50%;
 }
+
 #footer{
     background-color: #707070;
     padding: 15px;
     text-align: center;
     color: white;
     font-size: 16px;
-    overflow: hidden;
-    grid-area: footer;
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+
+@media only screen and (max-width: 905px){
+  .topnav a{
+    display: none;
+  }
+
+  .menu{
+    display: block;
+  }
+
+  #inova_logo{
+    width: 100px;
+    padding-left: 350px;
+  }
+
+  .column2{
+    margin-top: 450px;
+  }
+
+  .columns {
+    display: inline-block;
+  }
+
+  .social_media div{
+    margin-left: 100px;
+  }
+
+
+
+}
+
+
+@media only screen and (max-width: 776px){
+  .topnav a{
+    display: none;
+  }
+
+  .menu{
+    display: block;
+  }
+
+  #inova_logo{
+    width: 100px;
+    padding-left: 320px;
+  }
+
+  .social_media div{
+    margin-left: 50px;
+  }
+}
+
+/*Tablet*/
+@media only screen and (max-width: 768px){
+  .topnav a{
+    display: none;
+  }
+
+  .menu{
+    display: block;
+  }
+
+  #inova_logo{
+    width: 100px;
+    padding-left: 330px;
+  }
+
+  .columns{
+    font-size: 18px;
+    width: 90%;
+    margin-left: 18px;
+    margin-right: 20px;
+  }
+
+  .social_media div{
+    margin-left: 30px;
+  }
+
+}
+
+@media only screen and (max-width: 730px){
+  .topnav a{
+    display: none;
+  }
+
+  .menu{
+    display: block;
+  }
+
+  #inova_logo{
+    width: 100px;
+    padding-left: 215px;
+  }
+
+  .social_media div{
+    margin-left: 20px;
+  }
+
+}
+
+@media only screen and (max-width: 618px){
+
+  .text{
+    margin-left: 5px;
+  }
+
+  .program {
+    margin-left: -50px;
+    height: 300px;
+    margin-top: 250px;
+  }
+
+  .social_media{
+    left: 65px;
+    position: absolute;
+  }
+
+  .social_media div{
+    margin-left: 2px;
+  }
+}
+
+@media only screen and (max-width: 618px){
+
+  .text{
+    margin-left: 5px;
+  }
+
+  .program {
+    margin-left: -50px;
+    height: 300px;
+    margin-top: 250px;
+  }
+
+  .social_media{
+    left: -5px;
+    position: absolute;
+  }
+
+  .social_media div{
+    margin-right: 5px;
+    margin-left: auto;
+
+  }
+}
+
+/*Mobil L*/
+@media only screen and (max-width: 425px){
+  .topnav a{
+    display: none;
+  }
+
+  .menu{
+    display: block;
+  }
+
+  #inova_logo{
+    width: 100px;
+    padding-left: 170px;
+  }
+}
+
+/*Mobile M*/
+@media only screen and (max-width: 375px){
+  .topnav a{
+    display: none;
+  }
+
+  .menu{
+    display: block;
+  }
+
+  #inova_logo{
+    width: 100px;
+    padding-left: 150px;
+  }
+}
+
+/*Mobile S*/
+@media only screen and (max-width: 320px){
+  .topnav a{
+    display: none;
+  }
+
+  .menu{
+    display: block;
+  }
+
+  #inova_logo{
+    width: 100px;
+    padding-left: 120px;
+  }
+
+  .columns{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
