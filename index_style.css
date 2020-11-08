@@ -53,6 +53,48 @@ body{
   background-color: white;
 }
 
+.menu:hover{
+  background-color: #969696;
+}
+
+#x-button{
+  padding-left: 20px;
+  font-family: "Arial";
+  color: white;
+}
+
+
+ul{
+  list-style-type: none;
+  height: 100%;
+}
+
+#menu_nav{
+  top: 0px;
+  position: absolute;
+  z-index: 2;
+  border: 1px solid #008000	;
+  height: 780px;
+  font-size: 25px;
+  background-color: #008000;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+#menu_nav li{
+  text-align: center;
+  padding: 50px;
+}
+
+li a{
+  text-decoration: none;
+  color: white;
+}
+
+#menu_nav li:hover{
+  background-color: #006400;
+}
+
 #bilde1{
   filter: blur(6px);
   padding-top: 10px;
@@ -113,8 +155,9 @@ body{
     text-align: center;
     color: white;
     font-size: 16px;
-    overflow: hidden;
-    grid-area: footer;
+    position:absolute;
+    bottom:0;
+    width:100%;
 }
 
 @media only screen and (max-width: 905px){
@@ -129,6 +172,10 @@ body{
   #inova_logo{
     width: 100px;
     padding-left: 350px;
+  }
+
+  .menu_nav{
+    display: none;
   }
 }
 
