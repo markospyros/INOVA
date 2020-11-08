@@ -410,3 +410,9 @@ p{
   }
 
   }
+
+  @media only screen and (max-height: 600px)  {
+    #menu_nav{
+      position: absolute;
+    }
+  }
