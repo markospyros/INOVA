@@ -263,6 +263,11 @@ li a{
     width: 100px;
     padding-left: 150px;
   }
+
+  .text_title{
+    margin-left: 20px;
+    font-size: 57px;
+  }
 }
 
 /*Mobile S*/
