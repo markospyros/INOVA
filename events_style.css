@@ -119,6 +119,7 @@ li a{
   padding-bottom: 400px;
 }
 
+
 #schedule td, #schedule th {
   width: 500px;
   border: 1px solid #ddd;
@@ -141,6 +142,8 @@ li a{
   background-color: green;
   color: white;
 }
+
+/*Code for table was from https://www.w3schools.com/html/html_tables.asp*/
 
 #footer{
     position: relative;
@@ -300,4 +303,10 @@ li a{
   }
 
 
+}
+
+@media only screen and (max-height: 600px)  {
+  #menu_nav{
+    position: absolute;
+  }
 }
