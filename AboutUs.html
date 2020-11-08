@@ -2,18 +2,27 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INOVA</title>
-    <link rel="stylesheet" href="aboutus_style.css">
+    <link rel="stylesheet" href="AboutUs_style.css">
   </head>
   <body>
-    <div class="topnav">
-      <div class="menu">
+    <div id="menu_nav">
+      <strong><p id="x-button" onclick="closeBar()">X</p></strong>
+      <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="AboutUs.html">About us</a></li>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  </div>
+    <div class="topnav" width="100%">
+      <div class="menu" onclick="openBar()">
         <div></div>
         <div></div>
         <div></div>
       </div>
-      <img src="bilder/inova_logo.png" id="inova_logo" width="188px">
+      <img src="bilder/inova_logo.png" id="inova_logo" width="188px" alt="Inova logo">
       <a href="contact.html">Contact</a>
       <a href="events.html">Events</a>
       <a href="AboutUs.html">About us</a>
@@ -43,7 +52,7 @@
       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
       <div class="columns">
   <div class="column1" style="width:200px">
-    <img src="bilder/img_person.png" class="staff" alt="Card image">
+    <img src="bilder/img_person.png" class="staff" alt="Robert Smith">
     <div class="info">
       <p><b>Business analyst</b></p>
       <p>Robert Smith</p>
@@ -51,7 +60,7 @@
     </div>
   </div>
   <div class="column2" style="width:200px">
-    <img src="bilder/img_person2.png" class="staff" alt="Card image">
+    <img src="bilder/img_person2.png" class="staff" alt="Jennifer Miller">
     <div class="info">
       <p><b>Project manager</b></p>
       <p>Jennifer Miller</p>
@@ -59,7 +68,7 @@
     </div>
   </div>
   <div class="column3" style="width:200px">
-    <img src="bilder/img_person3.png" class="staff" alt="Card image">
+    <img src="bilder/img_person3.png" class="staff" alt="Jessica White">
     <div class="info">
       <p><b>Engineer</b></p>
       <p>Jessica White</p>
@@ -67,7 +76,7 @@
     </div>
   </div>
   <div class="column4" style="width:200px">
-    <img src="bilder/img_person4.jpg" class="staff" alt="Card image">
+    <img src="bilder/img_person4.jpg" class="staff" alt="Robert Smith">
     <div class="info">
       <p><b>Business analyst</b></p>
       <p>Robert Smith</p>
@@ -76,6 +85,17 @@
   </div>
 </div>
       <br>
-      <!--<div id="footer">© Copyright 2020 INOVA · Designed By Marko Spyros & Mostafa Hadad · All Rights Reserved</div>-->
+      <div id="footer" width="100%">© Copyright 2020 INOVA · Designed By Marko Spyros & Mostafa Hadad · All Rights Reserved</div>
   </body>
+  <script type="text/javascript">
+
+  function openBar() {
+    document.getElementById("menu_nav").style.display = "block";
+  }
+
+  function closeBar() {
+    document.getElementById("menu_nav").style.display = "none";
+  }
+
+  </script>
 </html>
