@@ -109,13 +109,15 @@ li a{
 }
 .column3 {
   flex: 33%;
-  padding-left: 50px;
+  padding-left: 70px;
 }
 .column4 {
   flex: 33%;
+    padding-left: 30px;
 }
 .column5{
   flex: 33%;
+    padding-left: 30px;
 }
 .social_media{
   display: flex;
@@ -144,9 +146,15 @@ p{
     text-align: center;
     color: white;
     font-size: 16px;
-    margin-top: 100px;
+    margin-top: 10px;
 }
-
+@media only screen and (max-width: 1105px){
+#footer{
+    position: relative;
+    top: 100px;
+}
+    
+    
 @media only screen and (max-width: 905px){
   .topnav a{
     display: none;
@@ -169,17 +177,17 @@ p{
     display: inline-block;
   }
 
-  .social_media div{
-    margin-left: 100px;
-  }
 
   .menu_nav{
     display: none;
   }
-
-
+        #footer{
+        position: relative;
+        top: 100px;
+    }
 
 }
+    
 
 
 @media only screen and (max-width: 776px){
@@ -196,9 +204,6 @@ p{
     padding-left: 320px;
   }
 
-  .social_media div{
-    margin-left: 50px;
-  }
 }
 
 /*Tablet*/
@@ -223,9 +228,6 @@ p{
     margin-right: 20px;
   }
 
-  .social_media div{
-    margin-left: 30px;
-  }
 
 }
 
@@ -241,10 +243,6 @@ p{
   #inova_logo{
     width: 100px;
     padding-left: 215px;
-  }
-
-  .social_media div{
-    margin-left: 20px;
   }
 
 }
@@ -269,6 +267,7 @@ p{
   .social_media div{
     margin-left: 2px;
   }
+    
 }
 
 @media only screen and (max-width: 618px){
@@ -298,9 +297,6 @@ p{
 @media only screen and (max-width: 500px){
 
 
-  .social_media{
-    margin-left: 60px;
-  }
 
   .social_media div{
     margin-right: 5px;
@@ -416,3 +412,4 @@ p{
       position: absolute;
     }
   }
+
