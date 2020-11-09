@@ -94,63 +94,68 @@ li a{
   background-color: #006400;
 }
 
-#introduction{
-  color: black;
-  opacity: 84%;
-  float: left;
-  padding-right: 10px;
-  margin-left: auto;
+.row {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-#text_intro_title{
-  font-size: 57px;
+.column {
+  flex: 50%;
 }
-
-#text_intro {
-  font-size: 27px;
+h2{
+    font-size: 57px;
+    padding-left: 50px;
 }
-#bilde2{
-    float: right;
-    width: 50%;
-    padding-top: 80px;
-}
-#headline{
-    text-align: center;
+.text{
+    font-size: 27px;
+    padding-left: 50px;
+    padding-right: 30px;
 }
 h1{
-    position: relative;
-    left: 680px;
-    top: 600px;
+    text-align: center;
 }
-.staff{
+.staff1{
+    border-radius: 50%;
+    width: 200px;
+}
+.staff2{
+    border-radius: 50%;
+    width: 200px;
+}
+.staff3{
+    border-radius: 50%;
+    width: 200px;
+}
+.staff4{
     border-radius: 50%;
     width: 200px;
 }
 .columns {
   display: flex;
-  border-radius: 150px;
-  padding-left: 20px;
+
 }
 
-.column1 {
-  flex: 20%;
-  height: 200px;
+.column_staff {
+  flex: 25%;
+  padding-left: 85px;
+  width: 200px;
 }
-.column2 {
-  flex: 20%;
-  padding: 10px;
-  height: 200px;
+
+.info1{
+    text-align: center;
+    padding-right: 100px;
 }
-.column3 {
-  flex: 20%;
-  padding: 10px;
-  height: 200px;
+.info2{
+    text-align: center;
+    padding-right: 100px;
 }
-.column4 {
-  flex: 20%;
-  padding: 10px;
-  height: 195px;
-  padding-bottom: 100px;
+.info3{
+    text-align: center;
+    padding-right: 100px;
+}
+.info4{
+    text-align: center;
+    padding-right: 100px;
 }
 
 #footer{
@@ -163,27 +168,38 @@ h1{
     margin-top: 100px;
 }
 
-
-@media only screen and (max-width: 1321px){
-  #introduction{
-    margin: auto;
-    float: none;
-    text-align: center;
-  }
-
-  #bilde2{
-    display: none;
-  }
-
-
+@media only screen and (max-width: 1500px){
+    .column_staff{
+        padding-left: 60px;
+        flex: 50%;
+    }
 }
-
-@media only screen and (max-width: 1024px){
-  h1{
-    left: 500px;
-  }
+@media only screen and (max-width: 1400px){
+    .column_staff{
+        padding-left: 40px;
+    }
 }
-
+@media only screen and (max-width: 1300px){
+    .column_staff{
+        padding-left: 20px;
+    }
+@media only screen and (max-width: 1150px){
+    .column_staff{
+        padding-left: 10px;
+    }
+    .info1{
+        padding-left: 20px; 
+    }
+    .info2{
+        padding-left: 20px; 
+    }
+    .info3{
+        padding-left: 20px; 
+    }
+    .info4{
+        padding-left: 20px; 
+    }
+}
 @media only screen and (max-width: 905px){
   .topnav a{
     display: none;
@@ -197,56 +213,78 @@ h1{
     width: 100px;
     padding-left: 350px;
   }
-
-  #introduction{
-    margin: auto;
-    float: none;
-  }
-
-  #bilde2{
+    .menu_nav{
     display: none;
   }
 
-  h1{
-    text-align: center;
-    position: relative;
-    left: 0;
-    top: 600px;
-  }
+    .column {
+  flex: 100%;
+    }
 
-  .column1{
-    display: flex;
-  }
-
-  .column2{
-    display: flex;
-  }
-
-  .column3{
-    display: flex;
-  }
-
-  .column4{
-    display: flex;
-  }
-
-  .info{
-    padding: 50px;
-  }
-
-
-  .columns{
-    display: inline-block;
-    padding-top: 50px;
-    align-items: center;
-  }
-
-  .menu_nav{
-    display: none;
-  }
-
+    .staff1{
+        width: 150px;
+    }
+    .staff2{
+        width: 150px;
+    }
+    .staff3{
+        width: 150px;
+    }
+    .staff4{
+        width: 150px;
+    }
+    .column_staff{
+        padding-left: 5px;
+    }
+    
 }
-
+@media only screen and (max-width: 850px){
+    .staff1{
+        width: 200px;
+        position: relative;
+        left: 100px;
+    }
+    .staff2{
+        width: 200px;
+        position: relative;
+        left: 300px;
+    }
+    .staff3{
+        width: 200px;
+        position: relative;
+        top: 400px;
+        right: 310px;
+    }
+    .staff4{
+        width: 200px;
+        position: relative;
+        top: 400px;
+        right: 100px;
+    }
+    .info1{
+        position: relative;
+        left: 100px;
+        
+    }
+    .info2{
+        position: relative;
+        left: 300px;
+    }
+    .info3{
+        position: relative;
+        top: 400px;
+        right: 310px;
+    }
+    .info4{
+        position: relative;
+        top: 400px;
+        right: 100px;
+    }
+    #footer{
+        position: relative;
+        top: 300px;
+    }
+}
 
 @media only screen and (max-width: 776px){
   .topnav a{
@@ -277,6 +315,31 @@ h1{
     width: 100px;
     padding-left: 330px;
   }
+    .staff1{
+        left: 50px;
+    }
+    .staff2{
+        left: 250px;
+    }
+    .staff3{
+        right: 360px;
+    }
+    .staff4{
+        right: 150px;
+    }
+    .info1{
+        left: 50px;
+        
+    }
+    .info2{
+        left: 250px;
+    }
+    .info3{
+        right: 360px;
+    }
+    .info4{
+        right: 150px;
+    }
 }
 
 @media only screen and (max-width: 730px){
@@ -293,7 +356,76 @@ h1{
     padding-left: 215px;
   }
 }
+@media only screen and (max-width: 690px){
+    .staff2{
+        left: 150px;
+    }
+    .staff4{
+        right: 250px;
+    }
+    .info2{
+        left: 150px;
+    }
+    .info4{
+        right: 250px;
+    }
+}
+@media only screen and (max-width: 590px){
+    .staff1{
+        width: 150px;
+        left: 20px;
+    }
+    .staff2{
+        left: 70px;
+        width: 150px;
+    }
+    .staff3{
+        width: 150px;
+        right: 390px;
+        top: 350px;
+    }
+    .staff4{
+        right: 330px;
+        width: 150px;
+        top: 350px;
+    }
+    .info1{
+        left: 20px;
+        font-size: 15px;
+    }
+    .info2{
+        left: 70px;
+        font-size: 15px;
+    }
+    .info3{
+        right: 390px;
+        font-size: 15px;
+        top:350px;
+    }
+    .info4{
+        right: 330px;
+        font-size: 15px;
+        top:350px;
+    }
+    #footer{
+        top:250px;
+    }
+}
+@media only screen and (max-width: 510px){
+    .staff2{
+        left: 10px;
+    }
+    .info2{
+        left:10px;
+    }
+    .staff4{
+        right: 390px;
+    }
+    .info4{
+        right:390px;
+    }
 
+}
 /*Mobil L*/
 @media only screen and (max-width: 425px){
   .topnav a{
@@ -308,19 +440,6 @@ h1{
     width: 100px;
     padding-left: 170px;
   }
-
-  .staff{
-    width: 50px;
-    height: 50px;
-  }
-
-  .info{
-    padding-top: 1px;
-    padding-left: 5px;
-    font-size: 18px;
-    width: 80px;
-  }
-
   #text_intro{
     font-size: 33px;
     margin-left: 18px;
