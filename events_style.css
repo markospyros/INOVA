@@ -106,7 +106,7 @@ li a{
   height: 300px;
   font-size: 27px;
   float: left;
-  width: 100%;
+  width: 50%;
 }
 
 
@@ -152,7 +152,6 @@ li a{
     text-align: center;
     color: white;
     font-size: 16px;
-    margin-top: 100px;
 }
 
 @media only screen and (max-width: 905px){
@@ -216,6 +215,10 @@ li a{
     width: 100px;
     padding-left: 215px;
   }
+        #footer{
+        position: relative;
+        top: 100px;
+    }
 }
 
 @media only screen and (max-width: 618px){
@@ -226,6 +229,7 @@ li a{
 
   .text{
     margin-left: 5px;
+    width: 100%;
   }
 
   .program {
@@ -233,7 +237,9 @@ li a{
     height: 300px;
     margin-top: 250px;
   }
-
+    .text{
+    width: 100%;
+  }
 }
 
 /*Mobil L*/
