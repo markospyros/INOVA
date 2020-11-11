@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INOVA</title>
+    <link rel="stylesheet" href="index_style.css">
+  </head>
+  <body>
+    <div id="menu_nav">
+      <strong><p id="x-button" onclick="closeBar()" alt="Close the bar">X</p></strong>
+      <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="AboutUs.html">About us</a></li>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  </div>
+    <div class="topnav" width="100%">
+      <div class="menu" onclick="openBar()" alt="menu button">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <!--We created the logo with adobe XD-->
+      <img src="bilder/inova_logo.png" id="inova_logo" width="188px" alt="Inova logo">
+      <a href="contact.html" class="contact">Contact</a>
+      <a href="events.html" class="events">Events</a>
+      <a href="AboutUs.html">About us</a>
+      <a href="index.html" class="home">Home</a>
+    </div>
+    <!--We got the picture from http://spe.dpe.ac.at/event/1540/-->
+    <img src="bilder/frugal_innovation.jpg" id="bilde1" width="100%" alt="Frugal Innovation background image">
+    <div class="text1">
+        <div class="tagline">-Do</div>
+        <div id="more">MORE</div>
+        <div class="tagline">with</div>
+        <div class="tagline">less</div>
+    </div>
+    <a href="events.html"><div class="registration" width="100%">JOIN OUR INNOVATION CAMPS</div></a>
+      <div id="footer" width="200%">© Copyright 2020 INOVA · Designed By Marko Spyros & Mostafa Hadad · All Rights Reserved</div>
+  </body>
+  <script type="text/javascript">
+
+  function openBar() {
+    document.getElementById("menu_nav").style.display = "block";
+  }
+
+  function closeBar() {
+    document.getElementById("menu_nav").style.display = "none";
+  }
+
+  </script>
+</html>
